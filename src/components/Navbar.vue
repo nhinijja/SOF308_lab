@@ -15,7 +15,18 @@
                                       <li><a class="dropdown-item" href="/bai4">Bài 4</a></li>
                                   </ul>
                               </li>
-                              <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Lab 3</a></li>
+                             
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                      <i class="fa-solid fa-circle-info"></i> Lab 3
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="/bai1lab3">Bài 1</a></li>
+                                      <li><a class="dropdown-item" href="/bai2lab3">Bài 2</a></li>
+                                      <li><a class="dropdown-item" href="/bai3">Bài 3</a></li>
+                                      <li><a class="dropdown-item" href="/bai4">Bài 4</a></li>
+                                  </ul>
+                              </li>
                               <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                       <i class="fa-solid fa-circle-info"></i> Lab 4

@@ -1,13 +1,13 @@
 <template>
   <div class="container mt-5">
-    <!-- Khung viền ngoài cùng -->
+    <!-- Outer border container -->
     <div class="border p-4 rounded">
       <div class="row">
-        <!-- Form Đăng Ký -->
+        <!-- Registration Form -->
         <div class="col-md-6">
           <h4>Form Đăng Ký Thông Tin</h4>
           <div class="border p-4 rounded">
-            <form>
+            <form class="was-validated">
               <div class="mb-3">
                 <label for="fullName" class="form-label">Họ và Tên</label>
                 <input
@@ -15,7 +15,10 @@
                   class="form-control"
                   id="fullName"
                   placeholder="Nhập họ và tên"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng điền vào trường này</div>
               </div>
 
               <div class="mb-3">
@@ -25,7 +28,10 @@
                   class="form-control"
                   id="email"
                   placeholder="Nhập email"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng nhập email hợp lệ</div>
               </div>
 
               <div class="mb-3">
@@ -35,7 +41,10 @@
                   class="form-control"
                   id="phone"
                   placeholder="Nhập số điện thoại"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
               </div>
 
               <div class="mb-3">
@@ -45,7 +54,10 @@
                   class="form-control"
                   id="password"
                   placeholder="Nhập mật khẩu"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
               </div>
 
               <div class="mb-3">
@@ -57,7 +69,10 @@
                   class="form-control"
                   id="confirmPassword"
                   placeholder="Xác nhập mật khẩu"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng xác nhận mật khẩu</div>
               </div>
 
               <div class="mb-3">
@@ -69,6 +84,7 @@
                       type="radio"
                       name="gender"
                       id="male"
+                      required
                     />
                     <label class="form-check-label" for="male">Nam</label>
                   </div>
@@ -78,24 +94,41 @@
                       type="radio"
                       name="gender"
                       id="female"
+                      required
                     />
                     <label class="form-check-label" for="female">Nữ</label>
                   </div>
                 </div>
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng chọn giới tính</div>
               </div>
+
               <div class="mb-3">
                 <label for="language" class="form-label">Ngôn Ngữ</label>
-                <select class="form-select" id="language">
-                  <option selected>Tiếng Việt</option>
+                <select class="form-select" id="language" required>
+                  <option selected disabled value="">Chọn ngôn ngữ</option>
+                  <option>Tiếng Việt</option>
                 </select>
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng chọn ngôn ngữ</div>
               </div>
 
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="terms" />
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="terms"
+                  required
+                />
                 <label class="form-check-label" for="terms"
                   >Tôi đồng ý với các điều khoản và điều kiện</label
                 >
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">
+                  Bạn cần đồng ý với các điều khoản
+                </div>
               </div>
+
               <div class="btn-group">
                 <button type="submit" class="btn btn-primary">Đăng Kí</button>
               </div>
@@ -103,11 +136,11 @@
           </div>
         </div>
 
-        <!-- Form Đăng nhập -->
+        <!-- Login Form -->
         <div class="col-6">
           <h4>Form Đăng nhập</h4>
           <div class="border p-4 rounded">
-            <form>
+            <form class="was-validated">
               <div class="mb-3">
                 <label for="loginEmail" class="form-label">Email</label>
                 <input
@@ -115,7 +148,10 @@
                   class="form-control"
                   id="loginEmail"
                   placeholder="Nhập email"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng nhập email hợp lệ</div>
               </div>
 
               <div class="mb-3">
@@ -125,7 +161,10 @@
                   class="form-control"
                   id="loginPassword"
                   placeholder="Nhập mật khẩu"
+                  required
                 />
+                <div class="valid-feedback">Hợp lệ</div>
+                <div class="invalid-feedback">Vui lòng nhập mật khẩu</div>
               </div>
               <div class="btn-group">
                 <button type="submit" class="btn btn-primary">Đăng Nhập</button>
@@ -144,4 +183,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* Add any custom styles here */
+</style>

@@ -311,7 +311,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "bai1lab3PY00004",
 };

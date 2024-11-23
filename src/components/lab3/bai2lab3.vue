@@ -490,7 +490,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .carousel-item img {
   height: 400px;
   object-fit: cover;

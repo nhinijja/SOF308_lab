@@ -1,5 +1,5 @@
 <template>
-   <div class="container">
+  <div class="container">
     <div class="table-container">
       <h2 class="table-title">Bảng Thành Phần Dinh Dưỡng</h2>
       <table class="table table-bordered table-custom">
@@ -58,33 +58,31 @@
       </table>
     </div>
   </div>
-
 </template>
 
 <script>
 export default {
-name: "bai1lab2PY00004"
-}
+  name: "bai1lab2PY00004",
+};
 </script>
 
-<style>
- .table-container {
-      border: 2px solid #ddd;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-      background-color: #ffffff;
-    }
-    .table-custom thead th {
-      background-color: #ffc107; /* Màu vàng cho tiêu đề */
-      color: #000;
-    }
-    .table-title {
-      color: #e74c3c;
-      font-weight: bold;
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
+<style scoped>
+.table-container {
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+.table-custom thead th {
+  background-color: #ffc107; /* Màu vàng cho tiêu đề */
+  color: #000;
+}
+.table-title {
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 </style>

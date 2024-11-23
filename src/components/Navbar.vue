@@ -41,6 +41,7 @@
               <li><a class="dropdown-item" href="/bai4lab3">Bài 4</a></li>
             </ul>
           </li>
+
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -48,23 +49,30 @@
               role="button"
               data-bs-toggle="dropdown"
             >
-              <i class="fa-solid fa-circle-info"></i> Lab 4
+              <i class="fa-solid fa-circle-info"></i> Lab 5
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-              <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
-              <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+              <li><a class="dropdown-item" href="/bai1lab5">Bài 1</a></li>
+              <li><a class="dropdown-item" href="/bai2lab5">Bài 2</a></li>
+              <li><a class="dropdown-item" href="/bai3lab5">Bài 3</a></li>
+              <li><a class="dropdown-item" href="/bai4lab5">Bài 4</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-circle-info"></i> Lab 5</a
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fa-solid fa-circle-info"></i> Lab 6</a
-            >
+              <i class="fa-solid fa-circle-info"></i> Lab 6
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/bai1lab6">Bài 1</a></li>
+              <li><a class="dropdown-item" href="/bai2lab6">Bài 2</a></li>
+              <li><a class="dropdown-item" href="/bai3lab6">Bài 3</a></li>
+              <li><a class="dropdown-item" href="/bai4lab6">Bài 4</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"

@@ -1,36 +1,35 @@
-<!-- <template>
-  <div class="container mt-5">
-    <LoginComponent
-      v-if="!isLoggedIn"
-      @login-success="handleLogin"
-    />
-    <CommentComponent
-      v-else
-      @logout="handleLogout"
-    />
+<template>
+  <div class="center-container">
+    <Login v-if="!isLoggedIn" @LoggedIn="handleLoginSuccess" />
+
+    <Comment v-else :username="loggedInUser" />
   </div>
 </template>
+
 <script>
 export default {
-  name: "Bai4Lab7Component",
+  name: "Lab7Bai4",
 };
 </script>
 <script setup>
 import { ref } from "vue";
-import LoginComponent from "./LoginComponent.vue";
-import CommentComponent from "./CommentComponent.vue";
+import Login from "./login.vue";
+import Comment from "./comment.vue";
 
-// State quản lý trạng thái đăng nhập
 const isLoggedIn = ref(false);
+const loggedInUser = ref("");
 
-// Hàm xử lý khi người dùng đăng nhập
-const handleLogin = (username) => {
+function handleLoginSuccess(username) {
+  loggedInUser.value = username;
   isLoggedIn.value = true;
-  console.log(`Người dùng ${username} đã đăng nhập.`);
-};
+}
+</script>
 
-// Hàm xử lý khi người dùng đăng xuất
-const handleLogout = () => {
-  isLoggedIn.value = false;
-};
-</script> -->
+<style scoped>
+.center-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh; /* Chiều cao full trang */
+}
+</style>

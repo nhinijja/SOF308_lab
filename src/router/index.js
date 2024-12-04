@@ -18,9 +18,8 @@ import Bai4Lab6Component from "../components/lab6/bai4lab6.vue";
 import Bai3Lab6Component from "../components/lab6/bai3lab6.vue";
 import Bai1Lab7Component from "../components/lab7/bai1lab7.vue";
 import Bai2Lab7Component from "../components/lab7/bai2lab7.vue";
-
 import Bai3Lab7Component from "../components/lab7/bai3lab7.vue";
-
+import Lab7Bai4 from "../components/lab7/Bai4Lab7.vue";
 
 const routes = [
   { path: "/lab1", component: Lab1PY00004 },
@@ -44,7 +43,7 @@ const routes = [
   { path: "/bai2lab7", component: Bai2Lab7Component },
  
   { path: "/bai3lab7", component: Bai3Lab7Component },
- 
+  { path: "/bai4lab7", component: Lab7Bai4 },
 ];
 
 const router = createRouter({

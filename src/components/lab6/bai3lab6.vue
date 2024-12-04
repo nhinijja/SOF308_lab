@@ -1,18 +1,30 @@
 <template>
   <div class="container mt-5">
-    <h1 class="text-center">Kiến thức sức khỏe cộng đồng</h1>
+    <h1 class="text-center">
+      Kiến thức sức khỏe cộng đồng
+    </h1>
     <div class="row">
-      <div class="col-sm-4 mb-4" v-for="(item, index) in items" :key="index">
+      <div
+        v-for="(item, index) in items"
+        :key="index"
+        class="col-sm-4 mb-4"
+      >
         <div class="card">
           <img
             :src="item.image"
             alt="Hình ảnh"
             class="card-img-top custom-img"
-          />
+          >
           <div class="card-body">
-            <h3 class="card-title">{{ item.title }}</h3>
-            <p class="card-text">{{ item.content }}</p>
-            <button class="btn btn-info">Xem chi tiết</button>
+            <h3 class="card-title">
+              {{ item.title }}
+            </h3>
+            <p class="card-text">
+              {{ item.content }}
+            </p>
+            <button class="btn btn-info">
+              Xem chi tiết
+            </button>
           </div>
         </div>
       </div>
@@ -29,7 +41,7 @@ import img2 from "../../assets/sesameoil_300x300.jpg";
 import img3 from "../../assets/spinach_300x300.jpg";
 
 export default {
-  name: "Bai4Lab6Component",
+  name: "Bai3Lab6Component",
   setup() {
     const items = ref([
       {

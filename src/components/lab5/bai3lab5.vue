@@ -10,7 +10,7 @@
           type="text"
           class="form-control"
           placeholder="Nhập họ và tên"
-        />
+        >
       </div>
 
       <!-- Tuổi -->
@@ -21,7 +21,7 @@
           type="number"
           class="form-control"
           placeholder="Nhập tuổi"
-        />
+        >
       </div>
 
       <!-- Email -->
@@ -32,7 +32,7 @@
           type="email"
           class="form-control"
           placeholder="Nhập email"
-        />
+        >
       </div>
     </form>
 

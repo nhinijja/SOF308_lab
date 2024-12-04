@@ -1,10 +1,21 @@
 <template>
   <div>
     <h2>Tạo bài viết mới</h2>
-    <input v-model="title" placeholder="Tiêu đề bài viết" />
-    <input v-model="author" placeholder="Tên tác giả" />
-    <textarea v-model="content" placeholder="Nội dung bài viết"></textarea>
-    <button @click="submitPost">Đăng bài</button>
+    <input
+      v-model="title"
+      placeholder="Tiêu đề bài viết"
+    >
+    <input
+      v-model="author"
+      placeholder="Tên tác giả"
+    >
+    <textarea
+      v-model="content"
+      placeholder="Nội dung bài viết"
+    />
+    <button @click="submitPost">
+      Đăng bài
+    </button>
   </div>
 </template>
 

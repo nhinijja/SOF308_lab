@@ -1,7 +1,10 @@
 <template>
   <div>
     <!-- Hộp nhập liệu -->
-    <input v-model="userInput" placeholder="Nhập dữ liệu vào đây" />
+    <input
+      v-model="userInput"
+      placeholder="Nhập dữ liệu vào đây"
+    >
     <!-- Hiển thị dữ liệu đã nhập -->
     <p>Giá trị bạn nhập: {{ userInput }}</p>
   </div>

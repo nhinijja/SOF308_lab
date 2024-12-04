@@ -1,12 +1,18 @@
 <template>
   <div class="container">
     <div class="table-container">
-      <h2 class="table-title">Bảng Thành Phần Dinh Dưỡng</h2>
+      <h2 class="table-title">
+        Bảng Thành Phần Dinh Dưỡng
+      </h2>
       <table class="table table-bordered table-custom">
         <thead>
           <tr>
-            <th rowspan="2">Thành Phần</th>
-            <th colspan="2">Giá Trị</th>
+            <th rowspan="2">
+              Thành Phần
+            </th>
+            <th colspan="2">
+              Giá Trị
+            </th>
           </tr>
           <tr>
             <th>Khối Lượng</th>
@@ -50,7 +56,7 @@
             <td>25%</td>
           </tr>
           <tr>
-            <td></td>
+            <td />
             <td>Vitamin D</td>
             <td>10%</td>
           </tr>
@@ -62,7 +68,7 @@
 
 <script>
 export default {
-  name: "bai1lab2PY00004",
+  name: "Bai1lab2PY00004",
 };
 </script>
 

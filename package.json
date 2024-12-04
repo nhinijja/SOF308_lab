@@ -12,7 +12,9 @@
     "vue": "^3.2.13",
     "vue-router": "^4.4.5"
   },
+  
   "devDependencies": {
+    
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
@@ -27,13 +29,15 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/vue3-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-undef": "error"
+    }
   },
   "browserslist": [
     "> 1%",

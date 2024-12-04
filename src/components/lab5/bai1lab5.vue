@@ -1,7 +1,10 @@
 <template>
   <div class="p-5">
     <p>{{ message }}</p>
-    <button class="btn btn-dark" @click="updateMessage">
+    <button
+      class="btn btn-dark"
+      @click="updateMessage"
+    >
       Thay đổi thông điệp
     </button>
   </div>

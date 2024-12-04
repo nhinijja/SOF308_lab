@@ -1,15 +1,21 @@
 <template>
   <div class="container">
     <!-- Navbar -->
-    <nav class="row p-2" style="background-color: #f0f7ff; padding-top: 0">
+    <nav
+      class="row p-2"
+      style="background-color: #f0f7ff; padding-top: 0"
+    >
       <nav class="navbar navbar-expand-sm">
         <div class="container">
-          <router-link class="navbar-brand" to="/bai2lab3">
+          <router-link
+            class="navbar-brand"
+            to="/bai2lab3"
+          >
             <img
               src="../../assets/logo-energy-pilates.png"
               alt="Logo"
               style="width: 150px"
-            />
+            >
           </router-link>
           <button
             class="navbar-toggler"
@@ -17,28 +23,43 @@
             data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" />
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div
+            id="collapsibleNavbar"
+            class="collapse navbar-collapse"
+          >
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <router-link class="nav-link" to="/bai3lab3">
-                  <i class="fa-solid fa-list"></i> Bài viết
+                <router-link
+                  class="nav-link"
+                  to="/bai3lab3"
+                >
+                  <i class="fa-solid fa-list" /> Bài viết
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/video">
-                  <i class="fa-solid fa-film"></i> Video
+                <router-link
+                  class="nav-link"
+                  to="/video"
+                >
+                  <i class="fa-solid fa-film" /> Video
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/gioithieu">
-                  <i class="fa-solid fa-circle-info"></i> Giới thiệu
+                <router-link
+                  class="nav-link"
+                  to="/gioithieu"
+                >
+                  <i class="fa-solid fa-circle-info" /> Giới thiệu
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/sukien">
-                  <i class="fa-solid fa-calendar-days"></i> Sự kiện
+                <router-link
+                  class="nav-link"
+                  to="/sukien"
+                >
+                  <i class="fa-solid fa-calendar-days" /> Sự kiện
                 </router-link>
               </li>
               <li class="nav-item dropdown">
@@ -48,30 +69,43 @@
                   role="button"
                   data-bs-toggle="dropdown"
                 >
-                  <i class="fa-solid fa-user"></i> Tài khoản
+                  <i class="fa-solid fa-user" /> Tài khoản
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <router-link class="dropdown-item" to="/login"
-                      >Đăng nhập</router-link
+                    <router-link
+                      class="dropdown-item"
+                      to="/login"
                     >
+                      Đăng nhập
+                    </router-link>
                   </li>
                   <li>
-                    <router-link class="dropdown-item" to="/quenmatkhau"
-                      >Quên mật khẩu</router-link
+                    <router-link
+                      class="dropdown-item"
+                      to="/quenmatkhau"
                     >
+                      Quên mật khẩu
+                    </router-link>
                   </li>
                   <li>
-                    <router-link class="dropdown-item" to="/dangky"
-                      >Đăng ký thành viên</router-link
+                    <router-link
+                      class="dropdown-item"
+                      to="/dangky"
                     >
+                      Đăng ký thành viên
+                    </router-link>
                   </li>
                 </ul>
               </li>
             </ul>
             <ul class="navbar-nav d-flex">
-              <li class="nav-item"><a class="nav-link">Tiếng Việt</a></li>
-              <li class="nav-item"><a class="nav-link">Tiếng Anh</a></li>
+              <li class="nav-item">
+                <a class="nav-link">Tiếng Việt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Tiếng Anh</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -90,19 +124,19 @@
               class="active"
               aria-current="true"
               aria-label="Slide 1"
-            ></button>
+            />
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
-            ></button>
+            />
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button>
+            />
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -110,21 +144,21 @@
                 src="../../assets/banner1.jpg"
                 class="d-block w-100"
                 alt="Slide 1"
-              />
+              >
             </div>
             <div class="carousel-item">
               <img
                 src="../../assets/banner2.jpg"
                 class="d-block w-100"
                 alt="Slide 2"
-              />
+              >
             </div>
             <div class="carousel-item">
               <img
                 src="../../assets/banner3.jpg"
                 class="d-block w-100"
                 alt="Slide 3"
-              />
+              >
             </div>
           </div>
           <button
@@ -133,7 +167,10 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            />
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -142,7 +179,10 @@
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            />
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -160,7 +200,7 @@
             src="../../assets/tap-piltes.jpg"
             class="img-fluid my-3"
             alt="Pilates"
-          />
+          >
 
           <p>
             Tập Pilates rất tốt cho sức khỏe và là một loại hình tập luyện thể
@@ -182,7 +222,7 @@
             src="../../assets/tap-pilates1.jpg"
             class="img-fluid my-3"
             alt="Pilates Cat Cow"
-          />
+          >
           <h3>Phương pháp tập Pilates Cat Cow</h3>
           <ul>
             <li>
@@ -207,23 +247,30 @@
 
         <!-- Sidebar with Comment Section -->
         <div class="col-md-4">
-          <h3 class="text-info">Bình luận và viết tại đây</h3>
+          <h3 class="text-info">
+            Bình luận và viết tại đây
+          </h3>
           <textarea
+            v-model="newComment"
             class="form-control mb-3"
             rows="5"
             placeholder="Viết bình luận của bạn..."
-            v-model="newComment"
-          ></textarea>
-          <button class="btn btn-primary w-100" @click="submitComment">
+          />
+          <button
+            class="btn btn-primary w-100"
+            @click="submitComment"
+          >
             Gửi bình luận
           </button>
 
-          <h3 class="text-info mt-4">Danh sách các bình luận</h3>
+          <h3 class="text-info mt-4">
+            Danh sách các bình luận
+          </h3>
           <ul class="list-group">
             <li
-              class="list-group-item"
               v-for="(comment, index) in comments"
               :key="index"
+              class="list-group-item"
             >
               {{ comment }}
             </li>

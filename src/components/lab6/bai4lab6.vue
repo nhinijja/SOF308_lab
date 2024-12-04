@@ -7,35 +7,42 @@
         <div class="mb-3">
           <label>Tên:</label>
           <input
-            type="text"
             v-model="student.name"
+            type="text"
             class="form-control"
             required
-          />
+          >
         </div>
         <div class="mb-3">
           <label>Điểm:</label>
           <input
-            type="number"
             v-model="student.score"
+            type="number"
             class="form-control"
             required
-          />
+          >
         </div>
         <div class="mb-3">
           <label>Ngày sinh:</label>
           <input
-            type="date"
             v-model="student.dob"
+            type="date"
             class="form-control"
             required
-          />
+          >
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
           {{ isEditing ? "Cập nhật" : "Thêm" }}
         </button>
 
-        <button type="button" class="btn btn-secondary" @click="resetForm">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click="resetForm"
+        >
           Reset
         </button>
       </form>
@@ -51,18 +58,27 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(student, index) in students" :key="index">
+          <tr
+            v-for="(student, index) in students"
+            :key="index"
+          >
             <td>{{ index + 1 }}</td>
             <td>{{ student.name }}</td>
             <td>{{ student.score }}</td>
             <td>{{ student.dob }}</td>
             <td>
-              <button class="btn btn-warning" @click="editStudent(index)">
+              <button
+                class="btn btn-warning"
+                @click="editStudent(index)"
+              >
                 Sửa
               </button>
             </td>
             <td>
-              <button class="btn btn-danger" @click="deleteStudent(index)">
+              <button
+                class="btn btn-danger"
+                @click="deleteStudent(index)"
+              >
                 Xóa
               </button>
             </td>

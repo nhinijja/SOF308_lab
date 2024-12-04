@@ -1,34 +1,5 @@
 <template>
   <div>
-    <h3>Quản lý danh sách sinh viên</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Tên</th>
-          <th>Điểm</th>
-          <th>Ngày sinh</th>
-          <th>Hành động</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(student, index) in students" :key="index">
-          <td>{{ index + 1 }}</td>
-          <td>{{ student.name }}</td>
-          <td>{{ student.score }}</td>
-          <td>{{ student.dob }}</td>
-          <td>
-            <button class="btn btn-warning" @click="editStudent(index)">
-              Sửa
-            </button>
-            <button class="btn btn-danger" @click="deleteStudent(index)">
-              Xóa
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
     <!-- Form thêm/sửa -->
     <div class="mt-4">
       <h4>{{ isEditing ? "Chỉnh sửa sinh viên" : "Thêm sinh viên mới" }}</h4>
@@ -63,10 +34,41 @@
         <button type="submit" class="btn btn-primary">
           {{ isEditing ? "Cập nhật" : "Thêm" }}
         </button>
+
         <button type="button" class="btn btn-secondary" @click="resetForm">
           Reset
         </button>
       </form>
+      <h3>Quản lý danh sách sinh viên</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Tên</th>
+            <th>Điểm</th>
+            <th>Ngày sinh</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(student, index) in students" :key="index">
+            <td>{{ index + 1 }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.score }}</td>
+            <td>{{ student.dob }}</td>
+            <td>
+              <button class="btn btn-warning" @click="editStudent(index)">
+                Sửa
+              </button>
+            </td>
+            <td>
+              <button class="btn btn-danger" @click="deleteStudent(index)">
+                Xóa
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </template>
@@ -76,7 +78,6 @@ import { ref } from "vue";
 export default {
   name: "Bai4Lab6Component",
   setup() {
-    // Danh sách sinh viên ban đầu
     const students = ref([
       { name: "Nguyễn Văn Anh", score: 8.5, dob: "2000-01-01" },
       { name: "Trần Thị Binh", score: 7.8, dob: "2000-05-15" },
@@ -87,7 +88,6 @@ export default {
     const isEditing = ref(false);
     const editingIndex = ref(null);
 
-    // Thêm mới hoặc cập nhật sinh viên
     const saveUser = () => {
       if (isEditing.value) {
         // Cập nhật sinh viên
@@ -95,25 +95,21 @@ export default {
         isEditing.value = false;
         editingIndex.value = null;
       } else {
-        // Thêm sinh viên mới
         students.value.push({ ...student.value });
       }
       resetForm();
     };
 
-    // Chỉnh sửa sinh viên
     const editStudent = (index) => {
       student.value = { ...students.value[index] };
       isEditing.value = true;
       editingIndex.value = index;
     };
 
-    // Xóa sinh viên
     const deleteStudent = (index) => {
       students.value.splice(index, 1);
     };
 
-    // Reset form về trạng thái ban đầu
     const resetForm = () => {
       student.value = { name: "", score: null, dob: "" };
       isEditing.value = false;
